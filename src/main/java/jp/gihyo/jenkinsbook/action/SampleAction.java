@@ -65,8 +65,8 @@ public class SampleAction {
     public final String execute(final HttpServletRequest request) {
         SampleDTO dto = new SampleDTO(firstName, lastName);
 
-        Calendar calender = Calendar.getInstance();
-        int hour = calendar.get(Calender.HOUR_OF_DAY);
+        Calendar calendar = Calendar.getInstance();
+        int hour = calendar.get(Calendar.HOUR_OF_DAY);
         if (hour <12){
             dto.setMessage("Cood Morning");
         }else{
