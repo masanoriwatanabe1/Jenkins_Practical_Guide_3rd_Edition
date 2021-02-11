@@ -70,7 +70,7 @@ public class SampleAction {
         if (hour <12){
             dto.setMessage("Cood Morning");
         }else{
-            dot.setMessage("Good afternoon");
+            dto.setMessage("Good afternoon");
         }
 
         HttpSession session = request.getSession(true);
